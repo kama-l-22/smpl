@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="icon" href="koko.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOKO-LOGIN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Bakbak+One&family=Prompt:wght@300&family=Source+Code+Pro:wght@200&family=Yeon+Sung&display=swap" rel="stylesheet">
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Aboreto', cursive;
+            border-radius: 15px;
+        }
+        .container{
+            background: rgb(125,152,255);
+background: linear-gradient(298deg, rgba(125,152,255,1) 34%, rgba(140,122,255,0.9588877787443102) 94%);
+            margin: 80px auto;
+            width: 800px;
+            min-height: 400px;
+            position: relative;
+        }
+        .box1{
+            
+            height: 370px;
+            width: 340px;
+            position:absolute;
+            top: 10px;
+            left :40px;
+            background-image: url(kologinbg.jpeg);
+            background-size: cover;
+            
+        }
+        .box2{
+            background-color:#ffff;
+            height: 370px;
+            width: 340px;
+            position: absolute;
+            top: 10px;
+            left:420px
+        }
+       
+        .inform input[type = 'text'],.inform input[type = 'password']{
+            border-radius: 15px;
+            height: 10px;
+        }
+        .inform input[type='submit']{
+            margin-top: 20px;
+            margin-left: 75px;
+            color: #ffff;
+            font-weight: bold;
+            background-color: #a29bfe;
+            border-radius: 25px;
+            border: none;
+            outline: none;
+            scale: 110%;
+            padding: 5px;
+        }
+        .inform input[type='submit']:hover{
+
+            
+            background: rgb(125,152,255);
+background: linear-gradient(298deg, rgba(125,152,255,1) 34%, rgba(140,122,255,0.9588877787443102) 94%);
+            transition: all .5s;
+        }
+        h2 span{
+             margin-left: 80px;
+        }
+        h2{margin-left: 50px;
+        margin-top: 20px;}
+        
+
+        
+        .inform{
+            margin-left: 65px;
+            margin-top: 20px;
+
+        }
+        h4{margin-left: 95px;
+        margin-top: 13px;
+        font-size: 10px;
+    }
+        h6{
+            margin-top: 6px;
+            margin-right: 20px;
+            font-size: small;
+        }
+
+        .box4{
+            /* Polygon 1 */
+
+            position: absolute;
+            width: 40px;
+            height: 38px;
+            left: 893px;
+            top: 353px;
+            background: rgb(125,152,255);
+background: linear-gradient(298deg, rgba(125,152,255,1) 34%, rgba(140,122,255,0.9588877787443102) 94%);
+            border-radius: 6px;
+            transform: rotate(90deg);}
+
+        .box5{
+            /* Polygon 1 */
+
+position: absolute;
+width: 40px;
+height: 38px;
+left: -150px;
+top: 0px;
+
+background: #849FFF;background: rgb(125,152,255);
+background: linear-gradient(298deg, rgba(125,152,255,1) 34%, rgba(140,122,255,0.9588877787443102) 94%);border-radius: 50%;
+transform: rotate(90deg);
+
+        }
+
+        .form-group{
+            height: 28px;
+            margin-bottom: 10px;
+            position: relative;
+            
+            
+          }
+          
+          .form-control{
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-bottom: 10px;
+            background:none;
+            border:1px solid  #a8c1ff;
+            outline:none;
+            
+            
+            padding: 16px;
+            border-radius: 3px;
+            z-index: 1;
+          }
+          
+          
+          .form-label{
+            position: absolute;
+            left: 13px;
+            top: 13px;
+            color: #010101;
+            background-color: rgb(255, 255, 255);
+            padding: 0 6px;
+            font-size: 14px;
+            transition:.3s;
+            
+          }
+          
+          .form-control:focus+ .form-label{
+            top: -10px;
+            z-index: 10;
+            color: #1B66C9;
+            font-weight: 500;
+          }
+          .form-control:focus{
+            border: 1px solid #1B66C9;
+          }
+          
+          .form-control:not(:focus):valid+label{
+            top: -10px;
+            z-index: 10;
+          }
+          
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box1"></div>
+
+        <div class="box2">
+            <form action="" method="post">
+                <!--{% csrf_token %}-->
+                <h2>WELCOME to koko <span style="color: #1B66C9;">login</span></h2>
+                <div class="inform">
+                
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="kologinusername" required>
+                        <label for="" class="form-label">UserName</label>
+                    </div>
+                        <br>
+                    <div class="form-group">
+                        <input type="password" class="form-control" required  id="txtPassword" name="kologinpassword">
+                        <label for="" class="form-label">Enter Your Password</label>
+                    </div>
+            
+                 
+
+
+                <input type="submit" value="login" name="kologin">
+                <h4>OR</h4>
+                <input type="submit" value="SIGI-IN" name="kosign_in">
+                <h6>OUR NEW USERS CAN SIGI-IN TO LOGIN </h6>
+            </div>
+            </form>
+        </div>
+
+        <div class="box4"></div>
+        <div class="box5"></div>
+
+        </div>
+    </div>
+</body>
+</html>

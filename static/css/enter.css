@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Prompt:wght@300&family=Source+Code+Pro:wght@200&family=Yeon+Sung&display=swap');
+
+
+* {
+    font-family: 'Bakbak One', cursive;
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'Yeon Sung', cursive;
+
+}
+.box{
+    width: 500px;
+    min-height: 390px;
+    margin: 75px auto;
+    background-color: #a8a8fa;
+    border-radius: 10px 35px 10px 35px;
+
+}
+.text{
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
+    padding-top: 20px;
+    color: #ffff;
+}
+.buttons a{
+    text-decoration: none;
+    color: #a8a8fa;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    margin: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    scale: 125%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 2px 3px rgb(105, 105, 105);
+}
+
+.buttons a:hover{
+    scale: 135%;
+    transition: all .2s;
+}
+small{
+    font-size: 10px;
+    color: black;
+}

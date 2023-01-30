@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Prompt:wght@300&family=Source+Code+Pro:wght@200&family=Yeon+Sung&display=swap');
+
+        *
+        {
+            font-family: 'Bakbak One', cursive;
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'Yeon Sung', cursive;
+
+        }
+
+        form{
+            width: 500px;
+            min-height: 390px;
+            margin: 75px auto;
+            background-color: #a8a8fa;
+            border-radius: 10px 35px 10px 35px;
+        
+        }
+        input[type = 'text'],input[type = 'password']{
+            width: 170px;
+            height: 35px;
+            margin: 5px;
+            margin-top: 10px;
+            margin-left: 160px;
+            text-align: center;
+            border-radius: 20px;
+            border: none;
+            font-size: large;
+        }
+        input[type='submit']{
+            background-color: #ffff;
+            color: #a8a8fa;
+            border: none;
+            scale: 150%;
+            margin-left: 220px;
+            margin-top: 50px;
+            border-radius: 10px;
+            font-size: larger;
+
+        }
+        .text{
+            font-size: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 5px;
+            padding-top: 20px;
+            color: #ffff;
+        }
+        input[type = 'text'],input[type = 'password']:focus{
+            font-family: 'Bakbak One', cursive;
+            font-family: 'Prompt', sans-serif;
+            font-family: 'Source Code Pro', monospace;
+            font-family: 'Yeon Sung', cursive;
+        }
